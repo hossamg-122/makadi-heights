@@ -12,20 +12,20 @@ const About = () => {
     <section className="section-about">
       <div className="section-about__img-box">
         {/* I use picture tag to enhance responsive images as we could display a whole new image depending on media query (art direction)
-        and display the image depending on the screen resolution that the browser detects automatically (density switching) by using srcset attribute
+        and display the image depending on the screen resolution that the browser detects automatically (density switching) by using srcSet attribute
         1x uses 1pixel for every pixel in image and 2x uses 2pixels for each pixel in image which is high resolution and size and need high screen resolution
          to display images in such quality  */}
 
         <picture className="section-about__img">
           <source
-            srcset={`
+            srcSet={`
               ${about_1x} 1x,
               ${about_2x} 2x
             `}
             media="(max-width:37.5em)"
           />
           <img
-            srcset={`${about_3x} 1x ,${about_4x} 2x`}
+            srcSet={`${about_3x} 1x ,${about_4x} 2x`}
             alt="happy couples"
             className="section-about__img"
           />

@@ -20,12 +20,12 @@ export const localData = {
 export const features = [
   {
     header: "Commercial Areas",
-    text: "Downtown Makadi Heights Mall",
+    text: "Downtown / Makadi Heights Mall",
     icon: <CommercialSvg />,
   },
   {
     header: "Kids Friendly Areas",
-    text: "Kids Aqua Park Kids Areas",
+    text: "Kids Aqua Park / Kids Areas",
     icon: <KidsSvg />,
   },
   {

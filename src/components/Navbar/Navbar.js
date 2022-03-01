@@ -14,7 +14,7 @@ const Navbar = () => {
       if (window.scrollY > 1.25 * (ref.current.clientHeight)) {
         setIsSticky(true)
       
-        console.log(window.scrollY)
+       
       }else{
         setIsSticky(false)
       }

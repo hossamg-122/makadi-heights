@@ -62,3 +62,27 @@
   color: var(--color-Primary);
   animation: moveUp 3s ease-in-out backwards;
 }
+.heading-tertiary {
+  text-transform: uppercase;
+  font-family: "diodrum";
+  font-size:1.8rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  color: var(--color-Primary-light)
+}
+.feature-description {
+  font-family: "sans sharp";
+  font-weight:500;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  color: var(--color-grey);
+  text-align: center;
+  width: 95%;
+
+  
+  
+  
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

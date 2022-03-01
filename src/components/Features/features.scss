@@ -4,7 +4,7 @@
   display: flex;
   &__left-side {
     flex: 1;
-    //  background-color: red;
+   
   }
   &__slider-box {
     background-color: blue;
@@ -14,31 +14,52 @@
   &__text-box {
   }
   &__features {
-    height: 50rem;
-    background-color: red;
     display: flex;
+    margin-inline-end: 2rem;
   }
 }
 
 // FeaturesContainer
 .left-features {
   flex: 1;
-  background-color: goldenrod;
+
   display: flex;
   flex-direction: column;
-
+  border-right: 1px dashed var(--color-border);
+  align-items: center;
+  
+  animation: moveLeft 3s ease-in-out backwards;
 }
 .right-features {
   flex: 1;
-  background-color: greenyellow;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  animation: moveRight 3s ease-in-out backwards;
 }
 
 // Feature
 
 .feature {
+  width: 85%;
   flex: 1;
-  background-color: violet;
-  &:not(:last-child){
-    border-bottom: 5px dotted black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 2rem;
+&:nth-child(2){
+  p {
+    width: 70%;
+  }
+}
+&:last-child{
+  p {
+    width: 70%;
+  }
+}
+  &:not(:last-child) {
+    border-bottom: 1px dashed var(--color-border);
   }
 }

@@ -6,7 +6,7 @@ const FeaturesContainer = () => {
     return features
       .map(({ header, text, icon }, index) => {
         return (
-          <Feature header={header} text={text}>
+          <Feature header={header} text={text} key={index} >
             {icon}
           </Feature>
         );
