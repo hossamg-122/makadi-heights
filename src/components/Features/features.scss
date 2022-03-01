@@ -1,0 +1,44 @@
+.features-section {
+  // background-color: black;
+  padding-block: 20rem;
+  display: flex;
+  &__left-side {
+    flex: 1;
+    //  background-color: red;
+  }
+  &__slider-box {
+    background-color: blue;
+    flex: 1;
+  }
+
+  &__text-box {
+  }
+  &__features {
+    height: 50rem;
+    background-color: red;
+    display: flex;
+  }
+}
+
+// FeaturesContainer
+.left-features {
+  flex: 1;
+  background-color: goldenrod;
+  display: flex;
+  flex-direction: column;
+
+}
+.right-features {
+  flex: 1;
+  background-color: greenyellow;
+}
+
+// Feature
+
+.feature {
+  flex: 1;
+  background-color: violet;
+  &:not(:last-child){
+    border-bottom: 5px dotted black;
+  }
+}
