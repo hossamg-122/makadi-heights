@@ -1,0 +1,39 @@
+// custom css instead on sass variables as it doesn't need a pre-processor to run
+:root {
+  // I recommend to define white-color as a variable so if we needed to change the content from white-color to another color we will make the change in only one place
+  // just trying every thing reusable as I can
+  --color-white: #fff;
+
+  --color-Primary: #21436e;
+  --color-Primary-light: #268fb4;
+  --color-Primary-dark: #1a3143;
+  --color-primary-opacity: #21426ef8;
+  --color-grey: #757575;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // I use percentage instead of setting the font size to a fixed number to make sure that if user changes the browser default font size from 16px to any number it won't
+  // affect on the design as I will use rems in all dimensions cause it makes my works easy in responsive
+
+  font-size: 62.5%; // (10px / 16px) x 100 = 62.5%,  1rem = 10px
+  font-weight: 400;
+  font-family: "diodrum", "shanti";
+}
+body {
+  box-sizing: border-box;
+  color: var(--color-white);
+  height: 10000px;
+ 
+}
+
+
