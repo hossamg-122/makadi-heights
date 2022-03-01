@@ -1,0 +1,55 @@
+.header {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  padding-block-start: 5.5rem;
+  
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  transition: all 1s ease-in-out;
+}
+.sticky {
+  background-color: black;
+  padding-block-start: 0;
+ // background-color: var(--color-primary-opacity);
+}
+.logo {
+  background-color: transparent;
+  height: 10rem;
+  width: 20rem;
+  margin-right: auto;
+  margin-left: 12rem;
+}
+.user-nav {
+  display: flex;
+  margin-right: 5.5rem;
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon-box {
+  }
+  &__icon {
+    height: 20rem;
+    width: 20rem;
+    fill: none;
+  }
+  &__notification {
+  }
+
+  &__menu-text {
+    margin-right: 2rem;
+    text-transform: uppercase;
+    font-family: "diodrum";
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+}
