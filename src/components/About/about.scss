@@ -1,0 +1,27 @@
+.section-about {
+ 
+  margin-block-start:-13rem;
+  padding-block-end: 8rem;
+  display: flex;
+
+  &__img-box {
+    flex: 0 0 47%;
+    animation: moveUp 3s ease-in-out backwards;
+  }
+  &__content {
+      flex: 1;
+    margin: -1.4rem 0 0 4.5rem;
+  }
+  &__img {
+    height: 100%;
+    width: 100%;
+    border-radius:.3rem;
+  
+  }
+  &__cta {
+    display: flex;
+  
+      
+  
+  }
+}
