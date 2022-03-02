@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import "./features.scss";
 import FeaturesContainer from "./FeaturesContainer";
+import ImagesSlider from "./ImagesSlider/ImagesSlider";
 const Features = () => {
   const { section_features } = useSelector((state) => state.makadi.content);
   return (
@@ -25,7 +26,7 @@ const Features = () => {
             <FeaturesContainer />
           </div>
         </div>
-        <div className="features-section__slider-box">slider boz</div>
+        <div className="features-section__slider-box"> <ImagesSlider /> </div>
       </section>
     </div>
   );

@@ -2,13 +2,16 @@
   // background-color: black;
   padding-block: 20rem;
   display: flex;
+ 
+  
   &__left-side {
     flex: 1;
-   
   }
   &__slider-box {
-    background-color: blue;
     flex: 1;
+    
+    
+    display: flex;
   }
 
   &__text-box {
@@ -27,7 +30,7 @@
   flex-direction: column;
   border-right: 1px dashed var(--color-border);
   align-items: center;
-  
+
   animation: moveLeft 3s ease-in-out backwards;
 }
 .right-features {
@@ -49,16 +52,19 @@
   align-items: center;
   justify-content: center;
   padding-block: 2rem;
-&:nth-child(2){
-  p {
-    width: 70%;
+  &:nth-child(2) {
+    p {
+      width: 70%;
+    }
   }
-}
-&:last-child{
-  p {
-    width: 70%;
+  &:last-child {
+    p {
+      width: 70%;
+    }
   }
-}
+  &:last-child{
+    padding-block-end: 1rem;
+  }
   &:not(:last-child) {
     border-bottom: 1px dashed var(--color-border);
   }

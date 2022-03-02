@@ -10,6 +10,8 @@
   --color-primary-opacity: #21426ef8;
   --color-secondary:#E5E5E5;
   --color-grey: #757575;
+  --color-grey-light:#c4c4c4;
+  --color-grey-light-2:#c4c4c46b;
  --color-border:#c4c4c48a;
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   --shadow-light: 0 1rem 2rem rgba(0, 0, 0, 0.3);
@@ -33,7 +35,7 @@ html {
 body {
   box-sizing: border-box;
   color: var(--color-white);
-  height: 10000px;
+ 
  
 }
 
