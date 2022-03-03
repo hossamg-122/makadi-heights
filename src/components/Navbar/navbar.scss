@@ -1,3 +1,4 @@
+@import "../../sass/abstract/mixins";
 .header {
   background-color: transparent;
   display: flex;
@@ -11,11 +12,12 @@
   right: 0;
 
   transition: all 1s ease-in-out;
+  
 }
 .sticky {
-  background-color: black;
+ 
   padding-block-start: 0;
- // background-color: var(--color-primary-opacity);
+ background-color: var(--color-primary-opacity);
 }
 .logo {
   background-color: transparent;
@@ -23,10 +25,34 @@
   width: 20rem;
   margin-right: auto;
   margin-left: 12rem;
+  @include respond (tab-port) {
+    margin-left: 8rem;
+  }
+  @include respond (tab-port) {
+    height: 7rem;
+    width: 16rem;
+  }
+  @include respond (phone) {
+    height: 6rem;
+    width: 15rem;
+    margin-left: 4rem;
+  }
+  @include respond (phone-sm) {
+    margin-left: 1rem;
+  }
 }
 .user-nav {
   display: flex;
   margin-right: 5.5rem;
+  @include respond (tab-port) {
+    margin-right: 1rem;
+  }
+  @include respond (phone) {
+    margin-right: 1rem;
+  }
+  @include respond (phone-sm) {
+    margin-right: 1rem;
+  }
   & > * {
     padding: 0 2rem;
     cursor: pointer;
@@ -35,13 +61,35 @@
   }
 
   &__icon-box {
+   &:nth-child(3){
+    @include respond (phone) {
+      display: none;
+    }
+    
+   }
+  
+  &--weather{
+    padding: 0 0;
+  
+   
+  }
   }
   &__icon {
-    height: 20rem;
-    width: 20rem;
-    fill: none;
+    height: 8rem;
+   margin-block-start: .25rem;
+  transition: all .5s ease-in-out;
   }
   &__notification {
+font-family: 'diodrum';
+font-weight: 500;
+font-size: 1.8rem;
+line-height: 2rem;
+  margin-left: 1rem;
+  @include respond (tab){
+    font-size: 2rem;
+    margin : -1.5rem 0 0 2rem;
+  }
+ 
   }
 
   &__menu-text {
@@ -51,5 +99,8 @@
     font-weight: 400;
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
+    @include respond (tab-port) {
+     display: none;
+    }
   }
 }

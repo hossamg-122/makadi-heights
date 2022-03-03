@@ -1,6 +1,4 @@
 import Navbar from "./components/Navbar/Navbar";
-//import Router from "./Router/Router";
-
 import Home from "./components/Home/Home";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
@@ -16,7 +14,7 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* I make the Content of the website here in main tag not a div or any other tag to follow semantic element design pattern to enhance SEO as search engines crawlers and spiders are 
+      {/* I made the Content of the website here in main tag not a div or any other tag to follow semantic element design pattern to enhance SEO as search engines crawlers and spiders are 
          are so sensitive to the tags and main tag stands for the content of the website
          */}
 
@@ -24,7 +22,6 @@ function App() {
         <Home />
         <Features />
       </main>
-      {/* <Router /> */}
     </>
   );
 }

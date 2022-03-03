@@ -4,6 +4,8 @@ import "./features.scss";
 import FeaturesContainer from "./FeaturesContainer";
 import ImagesSlider from "./ImagesSlider/ImagesSlider";
 const Features = () => {
+
+  // i use this redux hook to get the content from redux as I simulate fetching content from DB process
   const { section_features } = useSelector((state) => state.makadi.content);
   return (
     <div className="container">
@@ -26,7 +28,13 @@ const Features = () => {
             <FeaturesContainer />
           </div>
         </div>
-        <div className="features-section__slider-box"> <ImagesSlider /> </div>
+        <div className="features-section__slider-box">
+          {/* 
+         there are many packages to handle image slides like react-slider or react-stick
+          but i decided to handle it manually with pure css, html, javascript to show my skills 
+          */}
+          <ImagesSlider />{" "}
+        </div>
       </section>
     </div>
   );

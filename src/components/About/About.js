@@ -28,6 +28,7 @@ const About = () => {
             srcSet={`${about_3x} 1x ,${about_4x} 2x`}
             alt="happy couples"
             className="section-about__img"
+            src={about_2x}
           />
         </picture>
       </div>

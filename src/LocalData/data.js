@@ -4,6 +4,11 @@ import KidsSvg from "../components/Features/Svgs/KidsSvg";
 import MedicalSvg from "../components/Features/Svgs/MedicalSvg";
 import ParkSvg from "../components/Features/Svgs/ParkSvg";
 import SportSvg from "../components/Features/Svgs/SportSvg";
+import slide_1x from "../assets/images/slide-1x.png";
+import slide_2x from "../assets/images/slide-2x.png";
+import about_1x from "../assets/images/about-1x.png";
+import about_2x from "../assets/images/about-2x.png";
+
 
 export const localData = {
   section_about: {
@@ -51,3 +56,41 @@ export const features = [
     icon: <MedicalSvg />,
   },
 ];
+export const slides = [
+  {
+    image_1x:slide_1x,
+    image_2x:slide_2x,
+    alt:'summer vacation',
+    style:"img-slider__img--1"
+  },
+  {
+    image_1x:about_1x,
+    image_2x:about_2x,
+    alt:'together forever',
+    style:"img-slider__img--2"
+  },
+  {
+    image_1x:slide_1x,
+    image_2x:slide_2x,
+    alt:'relaxation',
+    style:"img-slider__img--3"
+  },
+  {
+    image_1x:about_1x,
+    image_2x:about_2x,
+    alt:'love story',
+    style:"img-slider__img--4"
+  },
+  {
+    image_1x:slide_1x,
+    image_2x:slide_2x,
+    alt:'chilling out',
+    style:"img-slider__img--5"
+  },
+  {
+    image_1x:about_1x,
+    image_2x:about_2x,
+    alt:'happy couples',
+    style:"img-slider__img--6"
+  },
+]

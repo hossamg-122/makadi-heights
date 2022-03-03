@@ -1,7 +1,10 @@
-.home-bg{
-  background-image:url(../../assets/images/home-1x.png);
+.home-bg {
+  background-image: url(../../assets/images/home-1x.png);
+  // this is responsive images in css to display the suitable image based on resolution and width
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: url(../../assets/images/home-2x.png);
+  }
   background-position: top;
   background-size: cover;
-  height:105vh;
-  
+  height: 105vh;
 }

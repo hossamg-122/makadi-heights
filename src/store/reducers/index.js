@@ -1,3 +1,4 @@
+// setup redux reducers
 import { combineReducers } from "redux";
 
 import makadiReducer from "./makadiReduscer";
