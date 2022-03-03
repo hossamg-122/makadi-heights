@@ -3,7 +3,7 @@ import "./svg.scss"
 const Weathersvg = () => {
   return (
     <svg
-    className="icon"
+    className="icon icon--weather"
       
       viewBox="0 0 52 40"
     
