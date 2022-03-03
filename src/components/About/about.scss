@@ -1,9 +1,12 @@
+@import "../../sass/abstract/mixins";
 .section-about {
  
   margin-block-start:-13rem;
   padding-block-end: 8rem;
   display: flex;
-
+  @include respond (tab-port) {
+    flex-direction: column;
+ }
   &__img-box {
     flex: 0 0 47%;
     animation: moveUp 3s ease-in-out backwards;
@@ -11,6 +14,9 @@
   &__content {
       flex: 1;
     margin: -1.4rem 0 0 4.5rem;
+    @include respond (tab-port) {
+      margin: 5rem 0 0 0;
+   }
   }
   &__img {
     height: 100%;
@@ -21,7 +27,11 @@
   &__cta {
     display: flex;
   
-      
+    @include respond (tab-port) {
+     
+     
+     justify-content: center;
+   }
   
   }
 }

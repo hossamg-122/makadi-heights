@@ -1,17 +1,28 @@
+@import "../../sass/abstract/mixins";
 .features-section {
-  // background-color: black;
-  padding-block: 20rem;
+ 
+  padding-block: 10rem 20rem;
   display: flex;
  
-  
+  @include respond (tab-port) {
+     
+     flex-direction: column;
+     
+   
+   }
+   
   &__left-side {
     flex: 1;
+    @include respond (tab-port) {
+      
+    
+    }
   }
   &__slider-box {
     flex: 1;
+    animation: moveUp 3s ease-in-out backwards;
     
-    
-    display: flex;
+   display: flex;
   }
 
   &__text-box {
@@ -19,8 +30,26 @@
   &__features {
     display: flex;
     margin-inline-end: 2rem;
+    @include respond (tab-port) {
+      
+      margin-inline-end: 0;
+      padding-inline: 8.5rem;
+     
+    }
+    @include respond (phone) {
+      padding-inline: 4.5rem;
+     
+    }
+    @include respond (phone-sm){
+      padding-inline: 0;
+      margin-inline-end: 0;
+    }
   }
+
+
+  
 }
+
 
 // FeaturesContainer
 .left-features {
@@ -67,5 +96,18 @@
   }
   &:not(:last-child) {
     border-bottom: 1px dashed var(--color-border);
+  }
+
+  @include respond (tab-port) {
+      
+    
+    padding-inline: 5rem;
+    padding-block: 5rem;
+   
+  }
+  @include respond (phone) {
+    padding-inline:0;
+    padding-block: 5rem;
+   
   }
 }

@@ -1,3 +1,5 @@
+ // in this file i mahe all the styles related to the content text to be easy to change and handle responsive 
+
 .heading-primary {
   display: flex;
   flex-direction: column;
@@ -6,7 +8,13 @@
   font-family: "diodrum";
   line-height: 8.5rem;
   font-size: 8.5rem;
-
+  @include respond (tab) {
+    font-size: 6.5rem;
+  }
+  @include respond (phone-sm) {
+    font-size: 5.5rem;
+    line-height: 6.5rem;
+  }
   &--main {
     font-weight: 500;
     animation: moveLeft 3s ease-in-out backwards;
@@ -35,6 +43,9 @@
     font-weight: 500;
     line-height: 3.8rem;
     animation: moveLeft 3s ease-in-out backwards;
+    @include respond (tab) {
+      font-size: 4rem;
+    }
   }
   &--sub {
     font-size: 9.5rem;
@@ -42,6 +53,9 @@
     justify-self: flex-start;
     line-height: 8.8rem;
     animation: moveRight 3s ease-in-out backwards;
+    @include respond (tab) {
+      font-size: 7rem;
+    }
   }
 }
 .site-description {
@@ -52,6 +66,9 @@
   line-height: 3.6rem;
   //word-spacing: .1rem;
   animation: moveUp 3s ease-in-out backwards;
+  @include respond (phone-sm) {
+    font-size: 1.8rem;
+  }
 }
 .features-description {
   font-family: "sans sharp";
@@ -61,6 +78,9 @@
   line-height: 2.9rem;
   color: var(--color-Primary);
   animation: moveUp 3s ease-in-out backwards;
+  @include respond (phone-sm){
+    padding-inline-end: 0;
+  }
 }
 .heading-tertiary {
   text-transform: uppercase;
@@ -78,7 +98,9 @@
   color: var(--color-grey);
   text-align: center;
   width: 95%;
-
+  @include respond (phone-sm) {
+    font-size: 1.4rem;
+  }
   
   
   

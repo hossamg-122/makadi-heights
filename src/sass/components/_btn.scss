@@ -7,6 +7,9 @@
   font-size: 1.4rem;
   font-weight: 400;
   padding: 1.5rem 3.4rem;
+  @include respond (tab){
+        padding: 1rem 1.5rem;
+      }
   border: none;
   border-radius:.3rem;
   cursor: pointer;
@@ -24,12 +27,28 @@
     &:first-child {
       margin-right: 2.5rem;
     }
+    @include respond (tab-port) {
+     
+      &:first-child {
+        margin-right: 5rem;
+      }
+      padding: 1.5rem 4rem;
+    }
+    @include respond (phone-sm) {
+     
+      &:first-child {
+        margin-right: 2.55rem;
+      }
+      padding: 1rem 2.25rem;
+    }
   }
+ 
   &__text{
       position: relative;
       z-index: 10;
       color: var(--color-Primary-dark);
       transition: all .5s .2s;
+      
   }
   &:hover &__text{
     color: var(--color-white);

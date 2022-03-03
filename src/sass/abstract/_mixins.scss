@@ -1,0 +1,68 @@
+// media query manager
+
+/* 
+     0 - 600px: phone-sm
+ 450px - 600px: phone
+ 600px - 800px : tablet
+ 800px - 950px: tablet portrait
+ 950px - 1100px: critical-1
+ 1100px - 1200px: Tablet landscape
+ 1200 - 1800px: normal styles
+ 1800px + : Big Desktop
+ */
+/*
+breakpoint arguments choices:
+ - phone
+ - tab
+ - tab-port
+ - critical-1
+ - tab-land
+ - big-desktop
+
+ 1em = 16px 
+ */
+// we will use ems instead of fixed pixels to be adapted to the font size that user sets for the browser
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone-sm {
+        @media (max-width: 28em) {
+          // 450px
+          @content;
+        }
+      }
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      // 600px
+      @content;
+    }
+  }
+  @if $breakpoint == tab {
+    // 800px
+    @media (max-width: 50em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    // 950px
+    @media (max-width: 59.40em) {
+      @content;
+    }
+  }
+  @if $breakpoint==critical-1 {
+    // 1100px
+    @media (max-width: 68.75em) {
+      @content;
+    }
+  }
+  @if $breakpoint==tab-land {
+    // 1200px
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint==big-desktop {
+    // 1800px
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

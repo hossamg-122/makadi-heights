@@ -1,5 +1,20 @@
 .container {
     max-width: 117rem;
     margin: 0 auto;
+    @include respond (tab-port) {
+      max-width: 100rem;
+   }
+   @include respond (tab) {
+    max-width: 85rem;
+  }
+  @include respond (phone) {
+    max-width: 65rem;
+  }
+  @include respond (phone-sm) {
+    max-width: 50rem;
+  }
+  // @include respond (big-desktop){
+  //   max-width: 140rem;
     
+  // }
   }
