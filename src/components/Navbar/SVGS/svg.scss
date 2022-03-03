@@ -1,7 +1,32 @@
+@import "../../../sass/abstract/mixins";
 .icon{
     height: 5rem;
     width: 5rem;
-    fill:none
+    fill:none;
+    transition: all .5s ease-in-out;
+  &--call{
+   
+    &:hover{
+        transform: scale(1.1) rotate(30deg) ;
+    }
+    &:active{
+        transform: scale(1.1) rotate(30deg) translateY(.2rem);
+    }
+  }  
+   &--menu {
+    &:hover{
+        transform: scale(1.1) ;
+    } 
+    &:active{
+        transform:scale(1.1) translateY(.2rem);
+
+    }
+   }
+   &--weather{
+    &:hover{
+        transform: scale(1.1) ;
+    }
+   }
 }
 .icon-path{
     fill: var(--color-white);

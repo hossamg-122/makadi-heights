@@ -3,7 +3,7 @@ import "./svg.scss"
 const Callsvg = () => {
   return (
     <svg
-     className="icon"
+     className="icon icon--call"
       viewBox="0 0 52 52"
      
       xmlns="http://www.w3.org/2000/svg"

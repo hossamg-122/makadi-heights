@@ -3,7 +3,7 @@ import "./svg.scss";
 const Menusvg = () => {
   return (
     <svg
-      className="icon"
+      className="icon icon--menu"
       viewBox="0 0 44 24"
       xmlns="http://www.w3.org/2000/svg"
     >
