@@ -41,6 +41,9 @@ html {
  @include respond (tab) {
   font-size: 46.87%; // 1rem = 7.5px, 7.5px / 16 = 46.87%
 }
+@include respond (phone-sm) {
+  font-size: 38%; // 1rem = 7.5px, 7.5px / 16 = 46.87%
+}
  @include respond(big-desktop) {
     font-size: 55%; // 1rem = 12px, 12px / 16 = 75%
   }
